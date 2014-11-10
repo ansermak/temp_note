@@ -23,8 +23,9 @@ var time_mark = function(){
  * @param {String} _text      text that sholud be added to the message block
  */
 var add_message = function(_time_mark, _text) {
-    document.getElementById('messages_block').innerHTML += '<div class="message"><div class="time_mark">' +
-        _time_mark + '</div><div class="delete_message" id="del_' + _time_mark + '"> X </div>' + _text + '</div>';
+    document.getElementById('messages_block').innerHTML = '<div class="message"><div class="time_mark">' +
+        _time_mark + '</div><div class="delete_message" id="del_' + _time_mark + '"> X </div>' + _text + '</div>' +
+        document.getElementById('messages_block').innerHTML;
     var del_btn = document.getElementsByClassName('delete_message');
     for (var i = 0; i < del_btn.length; i++) {
         del_btn[i].onclick = del_function;
