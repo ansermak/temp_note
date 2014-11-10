@@ -16,6 +16,16 @@ var time_mark = function(){
 };
 
 
+var mouse_over_message = function() {
+    this.getElementsByClassName('delete_message')[0].style.display = 'block';
+    this.getElementsByClassName('message_text')[0].style.marginTop = '-25px';
+};
+
+var mouse_out_message = function() {
+    this.getElementsByClassName('delete_message')[0].style.display = '';
+    this.getElementsByClassName('message_text')[0].style.marginTop = '15px';
+};
+
 /**
  * adds div with message block to th page
  * @param {String} _time_mark date + time of creating message (is used as a key in localStorage)
@@ -24,11 +34,14 @@ var time_mark = function(){
  */
 var add_message = function(_time_mark, _text) {
     document.getElementById('messages_block').innerHTML = '<div class="message"><div class="time_mark">' +
-        _time_mark + '</div><div class="delete_message" id="del_' + _time_mark + '"> X </div><div class="message_text">' + _text + '</div></div>' +
+        _time_mark + '</div><div class="delete_message" id="del_' + _time_mark +
+        '"> X </div><div class="message_text">' + _text + '</div></div>' +
         document.getElementById('messages_block').innerHTML;
     var del_btn = document.getElementsByClassName('delete_message');
     for (var i = 0; i < del_btn.length; i++) {
         del_btn[i].onclick = del_function;
+        del_btn[i].parentElement.onmouseover = mouse_over_message;
+        del_btn[i].parentElement.onmouseout = mouse_out_message;
     }
 };
 

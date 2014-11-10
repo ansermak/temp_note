@@ -30,6 +30,7 @@
     color: #F00;
     font-size: 26px;
     border-radius: 5px;
+    display: none;
 }
 .delete_message:hover{
     color: rgba(255, 185, 185, 1);
@@ -50,5 +51,5 @@
 }
 .message_text{
     display: block;
-    margin: -25px 40px 10px 10px;
+    margin: 15px 40px 10px 10px;
 }
