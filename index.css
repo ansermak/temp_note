@@ -1,51 +1,54 @@
-<style type="text/css">
-            #messages_block{}
-            .message{
-                border: 2px solid gray;
-                border-radius: 5px;
-                background-color: #eee;
-                padding: 5px;
-                margin: 10px;
-            }
-            #message_input{
-                width:500px;
-                height:200px;
-            }
-            .time_mark{
-                color: #AAA;
-                font-size: 10pt;
-                font-style: italic;
-                border-bottom: 1px solid;
-                text-align: right;
-                margin-bottom: 10px;
-            }
-            .delete_message{
-                background-color: rgba(255, 185, 185, 1);
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                position: relative;
-                right: -97%;
-                top: -5px;
-                text-align: center;
-                color: #F00;
-                font-size: 26px;
-                border-radius: 5px;
-            }
-            .delete_message:hover{
-                color: rgba(255, 185, 185, 1);
-                background-color: #F00;
-                cursor: pointer;
-            }
-            #head{
-                background-color: #eee;
-                width: 100%;
-                text-align: center;
-                display: table;
-            }
-            #head-text{
-                height: 200px;
-                font-size: 20pt;
-                display: table-cell;
-                vertical-align: middle;
-            }
+#messages_block{}
+.message{
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 5px;
+    margin: 10px;
+}
+#message_input{
+    width:500px;
+    height:200px;
+}
+.time_mark{
+    color: #AAA;
+    font-size: 10pt;
+    font-style: italic;
+    border-bottom: 1px solid;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.delete_message{
+    background-color: rgba(255, 185, 185, 1);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: -97%;
+    top: -5px;
+    text-align: center;
+    color: #F00;
+    font-size: 26px;
+    border-radius: 5px;
+}
+.delete_message:hover{
+    color: rgba(255, 185, 185, 1);
+    background-color: #F00;
+    cursor: pointer;
+}
+#head{
+    background-color: #eee;
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+#head-text{
+    height: 200px;
+    font-size: 20pt;
+    display: table-cell;
+    vertical-align: middle;
+}
+.message_text{
+    display: block;
+    margin: -25px 40px 10px 10px;
+}

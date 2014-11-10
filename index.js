@@ -24,7 +24,7 @@ var time_mark = function(){
  */
 var add_message = function(_time_mark, _text) {
     document.getElementById('messages_block').innerHTML = '<div class="message"><div class="time_mark">' +
-        _time_mark + '</div><div class="delete_message" id="del_' + _time_mark + '"> X </div>' + _text + '</div>' +
+        _time_mark + '</div><div class="delete_message" id="del_' + _time_mark + '"> X </div><div class="message_text">' + _text + '</div></div>' +
         document.getElementById('messages_block').innerHTML;
     var del_btn = document.getElementsByClassName('delete_message');
     for (var i = 0; i < del_btn.length; i++) {
